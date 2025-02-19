@@ -1,0 +1,43 @@
+¨*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: rgb(43, 142, 142);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+main{
+    background-color: white;
+    box-shadow: 2px 3px 3px black;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+form >.r{
+    background: green;
+}
+
+h1{
+text-align: center;
+}
+a{
+    color: black;
+    background: lightslategrey;
+    text-decoration: none;
+}
+a:hover{
+background-color: brown;
+
+}

@@ -1,0 +1,139 @@
+body {
+    background-image: linear-gradient(to right, rgb(114, 121, 103),rgba(9, 134, 82, 0.733)) ;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+audio{
+    display: none;
+}
+
+header {
+    background-image: url('../imagens/9849b.jpg');
+    height: 250px;
+   
+}
+
+header >h1 {
+   
+    color: #f2f0f0;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+
+    width: 200px;
+    height: 63%;
+    margin-top: -50px; 
+
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+}
+
+.cn {
+    width: 32px;
+    height: 2px;
+    background: #f0ecec;
+    margin: 8px;
+}
+
+#menuButton {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 4px ;
+   margin-top: 5px;
+    width: 4%;
+    height: 15%;
+    cursor: pointer;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #333;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+main {
+    margin-left: 0;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+main.open {
+    margin-left: 250px;
+}
+
+section {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: hsla(201, 65%, 52%, 0.696);
+    border-radius: 12px;
+    height: 400px;
+    width: 400px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+}
+
+.b, .bb, .bc {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0.8s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
