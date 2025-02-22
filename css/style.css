@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to right, rgb(114, 121, 103),rgba(9, 134, 82, 0.733)) ;
+    background-color:burlywood ;
     background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,6 +14,7 @@ audio{
 header {
     background-image: url('../imagens/9849b.jpg');
     height: 250px;
+    margin-top: -30px; 
    
 }
 
@@ -75,7 +76,7 @@ header >h1 {
     transition: left 0.3s ease;
 }
 
-.sidebar a {
+.sidebar>.r>h1, a {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 18px;
@@ -86,6 +87,17 @@ header >h1 {
 
 .sidebar a:hover {
     background-color: #575757;
+}
+
+.r>a{
+    display: none;
+    font-size: 13px;
+}
+
+.r:hover>a{
+    display: block;
+    cursor: pointer;
+    
 }
 
 main {
