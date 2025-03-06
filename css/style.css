@@ -1,5 +1,5 @@
 body {
-    background-color:burlywood ;
+    background-image: linear-gradient(to right, burlywood,rgb(25, 64, 73)) ;
     background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,7 +13,6 @@ audio{
 
 header {
     background-image: url('../imagens/9849b.jpg');
-    height: 250px;
     margin-top: -30px; 
    
 }
@@ -22,14 +21,17 @@ header >h1 {
    
     color: #f2f0f0;
     text-align: center;
-    padding: 10px;
+    margin: -2px 0 0 0;
+
 }
 
 .logo {
 
+    display: block;
     width: 200px;
     height: 63%;
-    margin-top: -50px; 
+   padding: 10px 0 0 0;
+  
 
 }
 
@@ -50,16 +52,16 @@ header >h1 {
 .cn {
     width: 32px;
     height: 2px;
-    background: #f0ecec;
+    background: #fcfafa;
     margin: 8px;
 }
 
 #menuButton {
+    display: inline-block;
     background-color: #555;
-    color: white;
     border: none;
     padding: 4px ;
-   margin-top: 5px;
+   margin-top: -30px;
     width: 4%;
     height: 15%;
     cursor: pointer;
@@ -102,8 +104,7 @@ header >h1 {
 
 main {
     margin-left: 0;
-    padding: 20px;
-    transition: margin-left 0.3s ease;
+    padding: 40px 20px;
 }
 
 .sidebar.open {
